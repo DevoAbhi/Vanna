@@ -9,7 +9,6 @@
 
 .welcome{
   min-height: 200px;
-  /* background-color:rgb(50, 101, 241); */
   background: #1c92d2;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #d0f7ff, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #d8f9ff, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -30,9 +29,7 @@ background: linear-gradient(to right, #d8f9ff, #1c92d2); /* W3C, IE 10+/ Edge, F
 }
 
 .user-details li:nth-child(odd){
-  /* background-color: rgb(157, 211, 250); */
   background-color: #d0f7ff;
-  /* height: 40px; */
 }
 
 .user-details{
