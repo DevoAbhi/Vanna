@@ -1,0 +1,37 @@
+<div class="wrapper" *ngFor="let user of userDetails">
+  <div class="welcome">
+    <p>Welcome {{user.name}} !</p>
+  </div>
+
+  <ul class="user-details">
+    <li>
+      <label for="">Email : </label>
+      <span>{{user.email}}</span>
+    </li>
+    <li>
+      <label for="">Phone Number : </label>
+      <span>{{user.phone}}</span>
+    </li>
+    <li>
+      <label for="">Address1 : </label>
+      <span>{{user.address1}}</span>
+    </li>
+    <li>
+      <label for="">Address2 : </label>
+      <span>{{user.address2}}</span>
+    </li>
+    <li>
+      <label for="">City : </label>
+      <span>{{user.city}}</span>
+    </li>
+    <li>
+      <label for="">Pincode : </label>
+      <span>{{user.pin}}</span>
+    </li>
+    <li>
+      <label for="">State : </label>
+      <span>{{user.state}}</span>
+    </li>
+  </ul>
+
+</div>

@@ -1,0 +1,27 @@
+<nav>
+  <div class="logo">
+      <h4>VANNA</h4>
+  </div>
+  <ul class="nav-links">
+    <!-- <img src="https://img.icons8.com/material-outlined/25/000000/home--v2.png"/> -->
+    <!-- <img src="https://img.icons8.com/metro/25/000000/search.png"/> -->
+    <!-- <img src="https://img.icons8.com/fluent-systems-regular/25/000000/video.png"/> -->
+      <li><a href="javascript:void(0)">Home</a></li>
+      <li><a href="javascript:void(0)">About</a></li>
+      <li><a href="javascript:void(0)">Contact Us</a></li>
+
+      <li class="nav-item" >
+        <button class="nav-link button" routerLink="login" *ngIf="!isUserAuthenticated">Login</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link button" (click)="onLogout()" *ngIf="isUserAuthenticated">Logout</button>
+      </li>
+
+  </ul>
+
+  <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+  </div>
+</nav>

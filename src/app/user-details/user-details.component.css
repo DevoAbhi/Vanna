@@ -1,0 +1,75 @@
+*{
+  font-family: 'Poppins', sans-serif !important;
+}
+.wrapper{
+  margin: 3rem 15rem;
+  background-color: aliceblue;
+  height: 100vh;
+}
+
+.welcome{
+  min-height: 200px;
+  /* background-color:rgb(50, 101, 241); */
+  background: #1c92d2;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #d0f7ff, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #d8f9ff, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  margin-bottom: 2rem;
+  color: #0073b1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.welcome p{
+  text-align: center;
+  font-weight: 400;
+  font-size: 45px;
+
+}
+
+.user-details li:nth-child(odd){
+  /* background-color: rgb(157, 211, 250); */
+  background-color: #d0f7ff;
+  /* height: 40px; */
+}
+
+.user-details{
+  line-height: normal;
+  margin: 0px 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-details li{
+  list-style: none;
+  font-size: 22px;
+  font-weight: 400;
+  opacity: 0.8;
+  border-radius: 10px;
+  padding-left: 1rem;
+}
+
+li label{
+  line-height: 1.8;
+  font-weight: 500;
+
+  display: inline-block;
+  width: 200px;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper{
+    margin: 0px;
+  }
+  .user-details{
+    margin: 0px 0.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .user-details li{
+    height: 100px;
+  }
+}

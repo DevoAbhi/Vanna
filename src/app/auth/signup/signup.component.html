@@ -1,0 +1,73 @@
+<div class="signup">
+  <h4>Sign Up</h4>
+<form [formGroup]="form" (submit)="onSignup()">
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="name">Name</label>
+      <input type="text" required class="form-control" id="name" formControlName="name" placeholder="Enter Name">
+    </div>
+    <div class="form-group ">
+      <label for="email">Email</label>
+      <input type="email" required class="form-control" id="email" formControlName="email" placeholder="Enter Email">
+    </div>
+    <div class="form-group ">
+      <label for="phone">Phone Number</label>
+      <input type="number" required class="form-control" id="phone" formControlName="phone" placeholder="Enter Phone number">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="Address1">Address 1</label>
+      <input type="text" required class="form-control" id="Address1" formControlName="address1" placeholder="House no., Apartment">
+    </div>
+    <div class="form-group ">
+      <label for="Address2">Address 2</label>
+      <input type="text" required class="form-control" id="Address2" formControlName="address2" placeholder="Street name, Locality, Landmark">
+    </div>
+  </div>
+
+  <div class="form-row">
+    <!-- <div class="form-group ">
+      <label for="city">City</label>
+      <input type="text" required class="form-control" formControlName="city" id="city" placeholder="Enter City name">
+    </div> -->
+    <div class="form-group ">
+      <label for="city">City</label>
+      <select id="city" class="form-control" formControlName="city">
+        <option selected>Choose City</option>
+        <option *ngFor="let city of cities">{{city}}</option>
+      </select>
+    </div>
+    <!-- <div class="form-group ">
+      <label for="state">State</label>
+      <input type="text" required class="form-control" formControlName="state" id="state" placeholder="Enter State name">
+    </div> -->
+    <div class="form-group ">
+      <label for="state">State</label>
+      <select id="state" class="form-control" formControlName="state">
+        <option selected>Choose State</option>
+        <option *ngFor="let state of states">{{state}}</option>
+      </select>
+    </div>
+    <div class="form-group ">
+      <label for="pin">Pincode</label>
+      <input type="number" required class="form-control" formControlName="pin" id="pin" placeholder="Pincode">
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group ">
+      <label for="password">Password</label>
+      <input type="password" required class="form-control" formControlName="password" id="password" placeholder="Enter Password">
+    </div>
+    <div class="form-group ">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" required class="form-control" formControlName="confirmPassword" id="confirmPassword" placeholder="Re Enter Password">
+    </div>
+  </div>
+
+  <button type="submit" class="btna">Sign Up</button>
+</form>
+</div>
+<!-- col-md-4 -->
+
+<!-- col-md-6 -->
